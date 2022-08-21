@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/uni/CE/digital logic/tamrin/tamrin3/Q2.xst" -ofn "E:/uni/CE/digital logic/tamrin/tamrin3/Q2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "Q2.ngc" Q2.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Q2_map.ncd Q2.ngd Q2.pcf 
+par -w -intstyle ise -ol high -mt off Q2_map.ncd Q2.ncd Q2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Q2.twx Q2.ncd -o Q2.twr Q2.pcf 

@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Q3.vf
+// /___/   /\     Timestamp : 03/24/2020 14:59:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog "E:/uni/CE/digital logic/tamrin/tamrin3/Q3.vf" -w "E:/uni/CE/digital logic/tamrin/tamrin3/Q3.sch"
+//Design Name: Q3
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Q3(in0, 
+          in1, 
+          in2, 
+          out0, 
+          out1, 
+          out2);
+
+    input in0;
+    input in1;
+    input in2;
+   output out0;
+   output out1;
+   output out2;
+   
+   wire XLXN_4;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   
+   assign out2 = 0;
+   AND2  XLXI_1 (.I0(in1), 
+                .I1(in0), 
+                .O(XLXN_4));
+   OR2  XLXI_4 (.I0(in2), 
+               .I1(XLXN_4), 
+               .O(out1));
+   AND3B2  XLXI_8 (.I0(in0), 
+                  .I1(in1), 
+                  .I2(in2), 
+                  .O(XLXN_23));
+   AND3B2  XLXI_9 (.I0(in1), 
+                  .I1(in2), 
+                  .I2(in0), 
+                  .O(XLXN_24));
+   AND3B2  XLXI_10 (.I0(in2), 
+                   .I1(in0), 
+                   .I2(in1), 
+                   .O(XLXN_25));
+   AND3  XLXI_11 (.I0(in2), 
+                 .I1(in1), 
+                 .I2(in0), 
+                 .O(XLXN_22));
+   OR4  XLXI_12 (.I0(XLXN_25), 
+                .I1(XLXN_24), 
+                .I2(XLXN_23), 
+                .I3(XLXN_22), 
+                .O(out0));
+endmodule
