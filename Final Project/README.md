@@ -2,7 +2,7 @@
 
 Group project of logic circuits course
 
-My teammate for this project was lovely [Negin](https://www.google.com).
+My teammate for this project was lovely [Negin](https://github.com/nderakhshan).
 
 In this project, we had to simulate and implement a traffic light at a crossroads, which has the following features:<br />
 * The duration of crossing four roads for each side of the light is 20 seconds.<br />
