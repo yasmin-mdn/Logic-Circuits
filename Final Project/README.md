@@ -10,3 +10,5 @@ In this project, we had to simulate and implement a traffic light at a crossroad
  
 Extra Points For:
  * Creating the ability to manually control the lights by the police and display the PO symbol on all segment 7s.
+ 
+ ![Traffic Light](https://github.com/yasmin-mdn/Logic-Circuits/blob/main/Final%20Project/pic.png)
